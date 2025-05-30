@@ -1,0 +1,14 @@
+﻿@model cong.Models.Category
+@{
+}
+
+<h2>Add Category</h2>
+<form asp-action="AddC" method="post">
+    <div class="form-group">
+        <label asp-for="NameC"></label>
+        <input asp-for="NameC" class="form-control" />
+        <span asp-validation-for="NameC" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a asp-action="/Category/IndexC" class="btn btn-secondary">Cancel</a>
+</form>
